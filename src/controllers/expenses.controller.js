@@ -17,7 +17,7 @@ const create = (req, res) => {
   const user = userService.getById(String(userId));
 
   if (!user) {
-    res.sendStatus(404);
+    res.sendStatus(400);
 
     return;
   }
